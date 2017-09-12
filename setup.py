@@ -1,7 +1,7 @@
 from distutils.core import setup
 setup(
-  name = 'clickpost_python_sdk',
-  packages = ['clickpost_python_sdk','clickpost_python_sdk.clickpost_order_creation'], # this must be the same as the name above
+  name = 'clickpost_python',
+  packages = ['clickpost_python','clickpost_python.clickpost_order_creation'], # this must be the same as the name above
   version = '0.1',
   description = 'Clickpost python sdk',
   author = 'Clickpost',

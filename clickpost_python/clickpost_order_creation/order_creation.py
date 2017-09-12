@@ -2,8 +2,8 @@ import json
 
 import requests
 
-from clickpost_python_sdk.clickpost_order_creation.order_creation_response import OrderCreationResponse
-from clickpost_python_sdk.constants import CLICKPOST_OC_URL
+from clickpost_python.clickpost_order_creation.order_creation_response import OrderCreationResponse
+from clickpost_python.constants import CLICKPOST_OC_URL
 
 
 class OrderCreation:
@@ -35,7 +35,7 @@ class OrderCreation:
                     label = final_result['result']['label']
                     reference_number = final_result['result']['reference_number']
             else:
-                raise Exception("Internal Server error in clickpost_python_sdk!")
+                raise Exception("Internal Server error in clickpost_python!")
         except Exception as e:
             success = False
             message = str(e)
